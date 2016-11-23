@@ -26,8 +26,8 @@ Virtualbox étant installé, la création d'une debian peut commencer.
  'adduser natacha sudo'  
  verification de la commande avec un "groups"  
  modifier le fichier de conf ac 'sudo nano ' /etc/sudoers et rajouter la ligne 'user ALL=(ALL:ALL) ALL'  
-
- ####clonage  
+  
+####clonage  
 Crée trois clonage -> Gateway, Client, Server_web  
 
 ####Snapshot  
