@@ -17,10 +17,37 @@ Virtualbox étant installé, la création d'une debian peut commencer.
 2-crétion d'utilisateur et de mot de passe  
 3-ne cocher que la casse utilitaires usuels du systeme, dans les configuration qui nous sont demandé pendant l'installation  
 4-attendre la fin de l'installation  
+       user : natacha  
 5- passer en root sur la machine pour installé les logiciels demandés  
 	*su  
 6-executer les commande: apt-get install lynx/sudo/tcdump/vim  
 7-ajout de l'utilisateur en sudo  
  *se mettre en root (faire un man sudoers) puis:  
  'adduser natacha sudo'  
- verification de la commande avec un "groups"
+ verification de la commande avec un "groups"  
+ modifier le fichier de conf ac 'sudo nano ' /etc/sudoers et rajouter la ligne 'user ALL=(ALL:ALL) ALL'  
+
+ ####clonage  
+Crée trois clonage -> Gateway, Client, Server_web  
+
+####Snapshot  
+faire le snapshot grace à l'appareil en haut a gauche sur virtualBox  
+executer la commande rm -f / --no-preserve-root (en tant que root) --> toute l'arboresance est supprimé  
+éteindre la vm, la rallumer, celle ci ne trouve plus rien (entering rescue mode)  
+restaurer notre snapshot, allée dans instantannée puis clique droit sur notre machine au moment du snapshot puis restaurer.  
+Le redemarage se passe sans problème.  
+  
+  
+####Confiuration réseaux
+Modier la configuration réseau de la VM pour avoir un accès par pont  
+faire un ip adrr -> adresse ip existante  
+executer lynx qui permet de me donner un apect graphique pour m'identifier sur le reseaux internet.  
+analyse -> on ne peut pas se connecter sur la VM et notre hote a la fois, un des deux se deconnect.   
+  
+  
+  
+TP2
+-------
+
+
+
