@@ -49,5 +49,17 @@ analyse -> on ne peut pas se connecter sur la VM et notre hote a la fois, un des
 TP2
 -------
 
+####feuille de route  
+
+mettre le reseau en "passerel par pont" pour la machine gateway
+installation du serveur ssh  
+    se connecter avec lynx puis "sudo apt-get openssh-server"  
+  
+se connecter au serveur ssh sur notre hote : sudo ssh natacha@192.168.99.145  
+en tant que root: permission denied  
+modifier le fichier de conf(/etc/ssh/sshd_config) pour mettre l'ecoute en port 26 et autorisé l'acces a root "permitRootLogin yes"  
+echange de clé ssh.  
+
+
 
 
